@@ -1,0 +1,27 @@
+# Core — CPU-only, small-footprint stack (total wheels < 75 MB target on install)
+numpy>=1.24,<2.0
+scipy>=1.10
+scikit-learn>=1.3
+Pillow>=10.0
+
+# Audio (MFCC features; no torch)
+librosa>=0.10
+soundfile>=0.12
+
+# Encrypted local store + DP
+cryptography>=41.0
+
+# Demo UI
+gradio>=4.0
+
+# TTS fallback (CPU; pyttsx3 uses OS voices, zero wheel weight)
+pyttsx3>=2.90
+
+# Eval + notebook
+pandas>=2.0
+matplotlib>=3.7
+jupyter>=1.0
+onnx>=1.21
+
+# Dev / test
+pytest>=7.4
